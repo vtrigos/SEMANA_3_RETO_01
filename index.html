@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMANA 3 - RETO 1</title>
+</head>
+<body>
+
+    <h1>Checkout</h1>
+    <main>
+        <form action="./mensaje.html">
+
+        <div>
+            <label for="ModoPago">Payment Method</label>
+            <select id="ModoPago" name="destination">
+                <option value="paris">Visa Ending in 4566</option>
+                <option value="tokyo">American Express Ending in 9122</option>
+                <option value="sydney">Discover Ending in 9865</option>
+            </select>   
+            <br><br>
+        </div>
+
+        <div>
+
+        <fieldset>
+            <legend>Shipping Method</legend>
+            <input type="radio" id="free2day" name="gender" value="free2day">
+            <label for="male">FREE - 2 Day Shipping</label><br>
+
+            <input type="radio" id="standard" name="gender" value="standard">
+            <label for="female">Standard Shipping (4 - 5 Bussiness Days)</label><br>
+
+            <input type="radio" id="norush" name="gender" value="norush">
+            <label for="other">FREE - No Rush Shipping (5 Bussiness Days)</label>
+        </fieldset>
+        <br><br>
+
+        </div>    
+    
+        <div>
+            <label for="checkbox">This a giff</label>
+            <input type="checkbox" id="checkbox" name="checkbox">  
+        </div>
+        
+        <div>  
+            <input type="submit" value="Place your order">
+        </div>
+        </form>
+    </main>
+
+</body>
+</html>
