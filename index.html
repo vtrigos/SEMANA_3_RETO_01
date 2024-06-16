@@ -13,10 +13,11 @@
 
         <div>
             <label for="ModoPago">Payment Method</label>
-            <select id="ModoPago" name="destination">
-                <option value="paris">Visa Ending in 4566</option>
-                <option value="tokyo">American Express Ending in 9122</option>
-                <option value="sydney">Discover Ending in 9865</option>
+            <select id="ModoPago" name="destination" required>
+                <option value="" selected disabled>-- Seleccione --</option>
+                <option value="visa">Visa Ending in 4566</option>
+                <option value="express">American Express Ending in 9122</option>
+                <option value="discover">Discover Ending in 9865</option>
             </select>   
             <br><br>
         </div>
@@ -25,13 +26,13 @@
 
         <fieldset>
             <legend>Shipping Method</legend>
-            <input type="radio" id="free2day" name="gender" value="free2day">
+            <input type="radio" id="free2day" name="gender" value="free2day" required>
             <label for="male">FREE - 2 Day Shipping</label><br>
 
-            <input type="radio" id="standard" name="gender" value="standard">
+            <input type="radio" id="standard" name="gender" value="standard" required>
             <label for="female">Standard Shipping (4 - 5 Bussiness Days)</label><br>
 
-            <input type="radio" id="norush" name="gender" value="norush">
+            <input type="radio" id="norush" name="gender" value="norush" required>
             <label for="other">FREE - No Rush Shipping (5 Bussiness Days)</label>
         </fieldset>
         <br><br>
